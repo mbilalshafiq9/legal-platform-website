@@ -36,9 +36,9 @@ const AboutLegalCompany = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h1 className="home-hero-title text-center"><AnimatedText text="About Legal Company" /></h1>
+          <h1 className="home-hero-title text-center"><AnimatedText text="About LegalPlatform" /></h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+            <AnimatedText text="LegalPlatform is a next-generation legal marketplace transforming how legal services are accessed, delivered, and scaled globally." />
           </div>
         </div>
 
@@ -48,9 +48,8 @@ const AboutLegalCompany = () => {
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Mission" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="We connect individuals, businesses, corporate teams, law firms, and independent lawyers inside one structured digital ecosystem. Users can post legal issues or hire lawyers on a one-time or monthly retainer basis. Lawyers can respond, consult, invoice directly within chat, and build recurring client relationships — all through a secure, transparent platform." />
             </div>
           </div>
 
@@ -59,9 +58,8 @@ const AboutLegalCompany = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Vision" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Traditional legal systems are slow, expensive, and geographically limited. LegalPlatform removes those barriers by creating a borderless legal infrastructure where legal services can be accessed instantly, managed digitally, and paid for securely." />
             </div>
           </div>
 
@@ -70,9 +68,8 @@ const AboutLegalCompany = () => {
             data-aos="fade-up"
             data-aos-delay="250"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform History" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="For businesses, we provide a centralized legal operations portal to manage multiple lawyers, onboard internal staff, and oversee ongoing matters." />
             </div>
           </div>
 
@@ -81,9 +78,28 @@ const AboutLegalCompany = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Target Audience" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="For lawyers, we provide a scalable digital practice model — allowing them to market their profile externally, attract recurring clients, and grow toward six-figure annual income streams without relying solely on traditional referrals." />
+            </div>
+          </div>
+
+          <div
+            className="info-page-block"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <div className="info-page-block-text">
+              <AnimatedText text="Our mission is to modernize legal services through technology, structured payments, and intelligent matching — building the foundation for a more accessible, efficient, and scalable global legal economy." />
+            </div>
+          </div>
+
+          <div
+            className="info-page-block"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div className="info-page-block-text text-center fw-bold">
+              <AnimatedText text="LegalPlatform is not just a legal app. It is the infrastructure for the future of legal services." />
             </div>
           </div>
         </div>

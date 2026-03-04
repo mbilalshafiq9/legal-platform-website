@@ -38,7 +38,7 @@ const BusinessPortal = () => {
         >
           <h1 className="home-hero-title text-center"><AnimatedText text="Business Portal" /></h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+            <AnimatedText text="The LegalPlatform Business Portal provides companies with a centralized legal management system. From one secure dashboard, you can post legal matters, hire and retain multiple lawyers across different practice areas, onboard team members, track ongoing cases, manage invoices, and maintain full visibility over your company's legal operations — all in one structured environment designed for scale." />
           </div>
         </div>
 
@@ -48,9 +48,9 @@ const BusinessPortal = () => {
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Mission" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="How It Works" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Your company creates a dedicated corporate account and gains access to a structured dashboard where legal matters can be initiated, tracked, and managed. Team members can be onboarded with assigned roles and permissions, allowing departments to collaborate while maintaining executive oversight. From the portal, businesses can hire or retain multiple lawyers across different practice areas, communicate securely through integrated chat, and upload relevant documents for review. Lawyers may send customized proposals or invoices directly through the system, which can be reviewed and approved internally before secure payment is processed. As your company grows, you can retain multiple legal professionals simultaneously, manage ongoing subscriptions, monitor active matters, and maintain full visibility over legal spend — all within one unified platform." />
             </div>
           </div>
 
@@ -59,31 +59,9 @@ const BusinessPortal = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Vision" /></h3>
-            <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
-            </div>
-          </div>
-
-          <div
-            className="info-page-block"
-            data-aos="fade-up"
-            data-aos-delay="250"
-          >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform History" /></h3>
-            <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
-            </div>
-          </div>
-
-          <div
-            className="info-page-block"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
             <h3 className="info-page-block-title"><AnimatedText text="Target Audience" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="The Business Portal is built for startups, growing enterprises, and established corporations seeking structured legal management, operational transparency, and scalable access to professional legal expertise." />
             </div>
           </div>
         </div>

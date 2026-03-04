@@ -38,7 +38,7 @@ const ForLawFirms = () => {
         >
           <h1 className="home-hero-title text-center"><AnimatedText text="For Law Firms" /></h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+            <AnimatedText text="Expand your firm's reach, attract new clients, and generate recurring revenue through LegalPlatform's digital marketplace. Create a verified firm profile, onboard multiple lawyers from your team, and offer both one-time legal services and subscription-based retainers — all within a secure and scalable platform." />
           </div>
         </div>
 
@@ -48,9 +48,9 @@ const ForLawFirms = () => {
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Mission" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="How It Works" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Law firms create a verified firm profile and list their practice areas and services. Multiple lawyers from the firm can be onboarded under the same firm account, allowing centralized management of client interactions. Clients can post legal issues, browse your firm's profile, or connect directly with your lawyers through secure chat. Within the conversation, your firm can send customized service proposals or invoices for one-time matters or ongoing retainers. Once payment is processed through the platform, legal services begin — with full transparency and structured communication." />
             </div>
           </div>
 
@@ -59,9 +59,9 @@ const ForLawFirms = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Vision" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Mission" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Our mission is to empower law firms with modern digital infrastructure that enhances visibility, streamlines client acquisition, and simplifies service delivery while maintaining professionalism and control." />
             </div>
           </div>
 
@@ -70,9 +70,9 @@ const ForLawFirms = () => {
             data-aos="fade-up"
             data-aos-delay="250"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform History" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Vision" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Our vision is to become the global digital bridge between law firms and clients — enabling firms to operate beyond geographical limitations and scale sustainably in a technology-driven legal ecosystem." />
             </div>
           </div>
 
@@ -81,9 +81,20 @@ const ForLawFirms = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
+            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform History" /></h3>
+            <div className="info-page-block-text">
+              <AnimatedText text="LegalPlatform was founded to modernize traditional legal engagement models. By combining verified legal professionals with secure digital tools, we created a marketplace that allows firms to connect with clients efficiently and manage engagements seamlessly online." />
+            </div>
+          </div>
+
+          <div
+            className="info-page-block"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
             <h3 className="info-page-block-title"><AnimatedText text="Target Audience" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="LegalPlatform is designed for boutique firms, mid-sized practices, and international law firms seeking to expand their digital presence, diversify revenue streams, and access new markets without increasing physical overhead." />
             </div>
           </div>
         </div>

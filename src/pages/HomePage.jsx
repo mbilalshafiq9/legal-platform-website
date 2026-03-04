@@ -24,6 +24,8 @@ import businessPortal from "../assets/images/businessPortal.png";
 import hireMultipleLawyers from "../assets/images/hireMultipleLawyers.png";
 
 import contractor from "../assets/images/contractor.png";
+import profileOne from "../assets/images/p1.png";
+import profileTwo from "../assets/images/p2.png";
 import corporate from "../assets/images/corporate.png";
 import user from "../assets/images/user.png";
 import firmLaw from "../assets/images/firm-law.png";
@@ -83,54 +85,66 @@ const HomePage = () => {
 
   const generalFaq = [
     {
-      q: "What is AI Lawyer?",
-      a: "AI Lawyer is your personal legal AI assistant that helps draft documents, answer questions, and create cases across web, iOS, and Android.",
+      q: "What is LegalPlatform?",
+      a: "LegalPlatform is a secure digital marketplace that connects individuals and businesses with verified lawyers. Users can post legal matters, hire professionals, communicate privately, upload documents, and manage payments — all within one structured platform.",
     },
     {
-      q: "Who is your platform for?",
-      a: "Consumers, lawyers, law firms, and law students — anyone needing fast, clear legal assistance.",
+      q: "Can I start if I have a legal issue?",
+      a: "Yes. If you have a legal matter, simply create an account and post your issue. You can then receive responses from relevant lawyers or browse and connect directly with a professional that matches your needs.",
     },
     {
-      q: "What countries/languages does it works for?",
-      a: "Our platform works worldwide and in many languages. You can ask questions in your language and get answers in the same language. This makes it easy for people from different places to use it.",
+      q: "How are payments handled?",
+      a: "All payments are processed securely within the platform. Lawyers send customized invoices directly in chat, and services begin once payment is confirmed. Payments outside the platform are strictly prohibited to protect both parties.",
     },
     {
-      q: "How to start using AI Lawyer?",
-      a: "Sign up on web or download our mobile app, then start by asking a question or creating a case using templates.",
+      q: "Can I retain a lawyer monthly?",
+      a: "Yes. Many lawyers offer subscription-based retainers for ongoing legal support. You can subscribe to a monthly package and receive continuous advisory services tailored to your needs.",
     },
     {
-      q: 'How to get "Students & teachers" discount?',
-      a: "Verify your academic email and apply the education discount in your account settings.",
+      q: "How do I choose the right lawyer?",
+      a: "You can review lawyer profiles, including their practice areas, services, pricing, and jurisdictions before making a decision. After you post your legal issue, relevant lawyers may respond. Once a lawyer responds, you can continue the discussion through a one-on-one secure chat to clarify details before proceeding with a one-time service or monthly retainer.",
     },
     {
-      q: "Can I receive a refund if I'm not satisfied?",
-      a: "Yes. Please review our refund policy and contact support; eligible refunds are processed quickly.",
+      q: "How can my company access legal support on LegalPlatform?",
+      a: "Your company can create a corporate account, post legal matters, or directly hire lawyers based on your business needs. Once a lawyer responds or is selected, you can communicate securely and proceed with structured engagements through the platform.",
+    },
+    {
+      q: "How long does it take to receive a response after posting my legal issue?",
+      a: "Once you post your legal matter, relevant lawyers can review and respond based on their availability and expertise. Response times may vary depending on the complexity of the issue, but you will be notified as soon as a lawyer replies so you can continue the discussion in a secure one-on-one chat.",
     },
   ];
   const lawyersFaq = [
     {
-      q: "How does AI Lawyer assist legal professionals?",
-      a: "It accelerates legal research, drafts motions and contracts, and organizes matter notes so you can focus on strategy.",
+      q: "Why should I join LegalPlatform?",
+      a: "LegalPlatform helps lawyers attract new clients, monetize their expertise, and scale beyond traditional referrals. You can offer one-time services, monthly retainers, and receive payments securely through the platform.",
     },
     {
-      q: "Can I integrate it with my existing tools?",
-      a: "You can export work to common formats and share with case management systems; integrations roadmap includes major providers.",
+      q: "How do I get clients?",
+      a: "Clients either post legal issues that match your expertise or connect directly through your profile. You can also share your unique profile link on social media to drive traffic and convert your audience into paying clients.",
     },
     {
-      q: "Is client data secure and compliant?",
-      a: "Data is encrypted in transit and at rest. Access controls and audit trails help maintain confidentiality and compliance.",
+      q: "Can I set my own pricing?",
+      a: "Yes. You control your pricing for consultations, document review, or subscription packages. You can also send customized invoices directly within the chat.",
     },
     {
-      q: "Does it support jurisdiction-specific citations?",
-      a: "It can tailor research summaries to your jurisdiction and include citations where available.",
+      q: "How do I get paid?",
+      a: "Once a client approves your invoice and completes payment through the platform, the funds are processed and transferred according to the platform's payout schedule.",
     },
     {
-      q: "Can my team collaborate inside the platform?",
-      a: "You can share drafts, comment, and maintain case folders to collaborate with paralegals and colleagues.",
+      q: "Can I offer monthly subscription services?",
+      a: "Yes. Lawyers can create recurring packages for businesses or individuals seeking ongoing legal support — allowing you to build predictable income streams.",
     },
     {
-      q: "How does pricing work for law firms?",
-      a: "Flexible seats for solo, small, and enterprise firms with usage-based tiers. Contact sales for volume discounts.",
+      q: "Is there a platform fee?",
+      a: "LegalPlatform applies a transparent service fee on completed transactions and take a platform fee from the lawyers. This fee supports secure payments, client acquisition, and platform infrastructure.",
+    },
+    {
+      q: "How can I scale to six figures using LegalPlatform?",
+      a: "Lawyers can scale their income by actively promoting their LegalPlatform profile outside the platform. You receive a personalized profile link that can be shared on LinkedIn, Instagram, TikTok, your website, email signature, or digital ads. By driving your own audience to your profile and offering structured one-time services or monthly subscription retainers, you can convert followers into paying clients. Consistent promotion combined with recurring retainers creates the opportunity to build predictable, scalable revenue.",
+    },
+    {
+      q: "Can law firms join?",
+      a: "Yes. Firms can onboard multiple lawyers under one structured account and manage client interactions centrally.",
     },
   ];
 
@@ -233,7 +247,6 @@ const HomePage = () => {
                 >
                   <h1 className="home-hero-title text-center">
                     <AnimatedText text="Post Your" tag="span" />{" "}
-                    <span className="d-md-none"> </span>
                     <AnimatedText text="Legal" tag="span" />
                     <br className="d-none d-md-block" />
                     <span className="d-md-none">
@@ -309,18 +322,13 @@ const HomePage = () => {
                     </h3>
                     <div className="home-hero-card-text">
                       <AnimatedText
-                        text="Say goodbye to expensive legal consultation,"
+                        text="Hire trusted lawyers online, compare services, and get"
                         tag="span"
-                      />
-                      <span className="d-md-none"> </span>
-                      <br className="d-none d-md-block" />
+                      />{" "}
                       <AnimatedText
-                        text="long waits for appointments, & confusing"
+                        text="professional legal advice — all in one secure platform."
                         tag="span"
                       />
-                      <span className="d-md-none"> </span>
-                      <br className="d-none d-md-block" />
-                      <AnimatedText text="legal texts." tag="span" />
                     </div>
                   </div>
                   <div
@@ -334,18 +342,14 @@ const HomePage = () => {
                     </h3>
                     <div className="home-hero-card-text text-white">
                       <AnimatedText
-                        text="Say goodbye to expensive legal consultation,"
+                        text="Skip the high fees and long waiting times. Speak directly"
                         tag="span"
-                      />
-                      <span className="d-md-none"> </span>
-                      <br className="d-none d-md-block" />
+                      />{" "}
                       <AnimatedText
-                        text="long waits for appointments, & confusing"
+                        text="with experienced lawyers and resolve your legal matters"
                         tag="span"
-                      />
-                      <span className="d-md-none"> </span>
-                      <br className="d-none d-md-block" />
-                      <AnimatedText text="legal texts." tag="span" />
+                      />{" "}
+                      <AnimatedText text="quickly and securely." tag="span" />
                     </div>
                   </div>
                 </div>
@@ -438,14 +442,7 @@ const HomePage = () => {
             data-aos-delay="200"
           >
             <AnimatedText
-              text="Explore features that boost your productivity. From document"
-              tag="span"
-            />
-            <AnimatedText text="automation" tag="span" />
-            <span className="d-md-none"> </span>
-            <br className="d-none d-md-block" />
-            <AnimatedText
-              text="to advanced research, we've got the hard work covered."
+              text="LegalPlatform connects users, businesses, and lawyers in one secure platform to post issues, hire legal experts, and manage matters effortlessly."
               tag="span"
             />
           </div>
@@ -467,7 +464,7 @@ const HomePage = () => {
                 <div>
                   <p>
                     <AnimatedText
-                      text="From deciphering complex terms to understanding rights, we've got you covered."
+                      text="Hire multiple lawyers, manage company legal matters, and oversee cases across departments from one centralized portal."
                       tag="span"
                     />
                   </p>
@@ -497,7 +494,7 @@ const HomePage = () => {
                 <div>
                   <p>
                     <AnimatedText
-                      text="Ask questions in plain language, upload documents, and get step‑by‑step guidance on everyday legal issues."
+                      text="Post your legal issue, hire a lawyer monthly or one-time, and connect directly for secure one-on-one guidance."
                       tag="span"
                     />
                   </p>
@@ -531,7 +528,7 @@ const HomePage = () => {
                 <div>
                   <p>
                     <AnimatedText
-                      text="Streamline research, drafting, and client communication while keeping every matter and document organised."
+                      text="Acquire new clients, manage legal work digitally, and streamline communication and billing in one secure platform."
                       tag="span"
                     />
                   </p>
@@ -565,7 +562,7 @@ const HomePage = () => {
                 <div>
                   <p>
                     <AnimatedText
-                      text="Build a modern digital practice, manage clients, and respond to matters from web or mobile—on your schedule."
+                      text="Offer your services, respond to posted legal issues, send invoices in chat, and market your profile to scale to 6 figures."
                       tag="span"
                     />
                   </p>
@@ -594,13 +591,7 @@ const HomePage = () => {
           </h2>
           <div className="mt-4 mb-5">
             <AnimatedText
-              text="Explore features that boost your productivity. From document automation"
-              tag="span"
-            />
-            <span className="d-md-none"> </span>
-            <br className="d-none d-md-block" />
-            <AnimatedText
-              text="to advanced research, we've got the hard work covered."
+              text="LegalPlatform connects users, businesses, and lawyers in one secure platform to post issues, hire legal experts, and manage matters effortlessly."
               tag="span"
             />
           </div>
@@ -622,13 +613,13 @@ const HomePage = () => {
               />
               <div className="feature-desc">
                 <AnimatedText
-                  text="Explore features that boost your productivity."
+                  text="Submit your legal issue and receive answers from"
                   tag="span"
                 />
                 <span className="d-md-none"> </span>
                 <br className="d-none d-md-block" />
                 <AnimatedText
-                  text="From document automation to advanced research."
+                  text="qualified lawyers."
                   tag="span"
                 />
               </div>
@@ -650,14 +641,14 @@ const HomePage = () => {
                   alt="Create a Case"
                   className="feature-icon case-img my-4 hover-scale"
                 />
-                <div className="feature-desc">
+                <div className="feature-desc text-white">
                   <AnimatedText
-                    text="Explore features that boost your productivity."
+                    text="Connect with verified lawyers and get the legal"
                     tag="span"
                   />{" "}
                   <br />
                   <AnimatedText
-                    text="From document automation to advanced research."
+                    text="support you need."
                     tag="span"
                   />
                 </div>
@@ -666,45 +657,53 @@ const HomePage = () => {
           </div>
           <div className="col-md-8" data-aos="fade-up" data-aos-delay="200">
             <div className="chat-card hover-lift">
-              <div className="mini-chat-card m-3 p-4 d-flex justify-content-center">
+              <img src={profileOne} alt="Profile" className="mini-chat-avatar" />
+              <div className="mini-chat-card d-flex justify-content-center">
                 <img
                   src={contractor}
                   alt=""
                   className="contractor hover-scale"
                 />
               </div>
+
               <div className="chat-bubbles">
-                <div
-                  className="bubble dark align-self-end hp-dark-bubble d-flex flex-column"
-                  data-aos="fade-left"
-                  data-aos-delay="400"
-                >
-                  <AnimatedText
-                    text="I need help reviewing a service contract for my business."
-                    tag="span"
-                  />
-                  <span
-                    className="time align-self-end mt-1"
-                    style={{ lineHeight: "1" }}
+                <div className="d-flex align-items-center justify-content-end mb-3">
+                  <div
+                    className="bubble dark align-self-end hp-dark-bubble d-flex flex-column align-items-end justify-content-between w-auto"
+                    data-aos="fade-left"
+                    data-aos-delay="400"
                   >
-                    02:14 PM
-                  </span>
-                </div>
-                <div
-                  className="bubble light d-flex align-items-center justify-content-center hp-light-bubble"
-                  data-aos="fade-right"
-                  data-aos-delay="500"
-                >
-                  <AnimatedText
-                    text="Thank you, this makes everything much clearer."
-                    tag="span"
+                    <span className="mb-1">
+                      <AnimatedText
+                        text="accusantium doloremque laudantium, totam."
+                        tag="span"
+                      />
+                    </span>
+                    <span className="time">02:14 PM</span>
+                  </div>
+                  <img
+                    src={profileOne}
+                    alt="User avatar"
+                    className="chat-avatar ms-2"
                   />
+                </div>
+
+                <div className="d-flex align-items-center">
+                  <img
+                    src={profileTwo}
+                    alt="Lawyer avatar"
+                    className="chat-avatar me-2"
+                  />
+                  <div
+                    className="bubble light d-flex align-items-center justify-content-center hp-light-bubble"
+                    data-aos="fade-right"
+                    data-aos-delay="500"
+                  >
+                    <AnimatedText text="Ok. Thanks Bro!" tag="span" />
+                  </div>
                 </div>
               </div>
-              <div className="chat-footer mt-3">
-                <h6 className="fw-semibold my-4 hp-ask-ai-heading">
-                  <AnimatedText text="Ask AI Lawyer" />
-                </h6>
+              <div className="chat-footer">
                 <div className="text-white hp-ask-ai-text">
                   <AnimatedText
                     text="Legal research never been easier. Have a conversation with your virtual assistant, gain insights and simple answers to your complex questions in real-time."
@@ -748,7 +747,7 @@ const HomePage = () => {
                 <AnimatedText text="Business Portal" />
               </h6>
               <p>
-                <AnimatedText text="Access our platform with a simple tapon the web, iOS, or Android." />
+                <AnimatedText text="Manage all your company's legal matters from one centralized dashboard. Post legal issues, track ongoing cases, onboard team members, and communicate with lawyers securely — all in one structured environment designed for businesses." />
               </p>
               <div className="row g-3 mt-1 px-3 pb-4">
                 <div className="col-12 d-flex justify-content-center align-items-center">
@@ -771,7 +770,7 @@ const HomePage = () => {
                 <AnimatedText text="Hire Multiple Lawyers for Your Business" />
               </h6>
               <p className="text-muted">
-                <AnimatedText text="Access our platform with a simple tapon the web, iOS, or Android." />
+                <AnimatedText text="Access and retain multiple lawyers across different practice areas based on your company’s needs. Compare services, manage subscriptions, review invoices, and build a scalable legal support system tailored to your organization." />
               </p>
               <div className="row g-3 mt-1 px-3 pb-4">
                 <div className="col-12 d-flex justify-content-center align-items-center">
@@ -884,22 +883,22 @@ const HomePage = () => {
             <div className="col-md-6 h-100 d-flex flex-column justify-content-center align-items-center">
               <div className="text-white">
                 <h2 className="mb-2 download-app-title text-center">
-                  <AnimatedText text="Start Your Legal" /> <br />
-                  <AnimatedText text="Journey Now!" baseIndex={16} />
+                  <AnimatedText text="Start your legal" /> <br />
+                  <AnimatedText text="journey today" baseIndex={16} />
                 </h2>
                 <div className="download-app-desc text-center">
                   <AnimatedText
-                    text="Stay connected with your guide on iOS &"
+                    text="Access trusted legal professionals, streamline"
                     tag="span"
                   />{" "}
                   <br className="br" />
                   <AnimatedText
-                    text="Android. Handle documents, track cases,"
+                    text="communication, and handle your legal needs"
                     tag="span"
                   />{" "}
                   <br className="br" />
                   <AnimatedText
-                    text="and receive guidance on the go."
+                    text="with confidence — anytime, anywhere."
                     tag="span"
                   />
                 </div>

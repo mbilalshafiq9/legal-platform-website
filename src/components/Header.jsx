@@ -14,6 +14,7 @@ const links = [
 
 export default function Header() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [activeLink, setActiveLink] = useState(location.pathname + location.hash || "/");
   const [isVisible, setIsVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -160,6 +161,7 @@ export default function Header() {
                 className="header-segment-btn header-segment-law"
                 data-aos="fade-down"
                 data-aos-delay="400"
+                onClick={() => navigate("/law-firm")}
               >
                 Law Firm
               </button>
@@ -168,6 +170,7 @@ export default function Header() {
                 className="header-segment-btn header-segment-corp"
                 data-aos="fade-down"
                 data-aos-delay="500"
+                onClick={() => navigate("/corporate")}
               >
                 Corporate
               </button>

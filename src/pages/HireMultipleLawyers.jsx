@@ -38,7 +38,7 @@ const HireMultipleLawyers = () => {
         >
           <h1 className="home-hero-title text-center"><AnimatedText text="Hire Multiple Lawyers for Your Business" /></h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+            <AnimatedText text="Build a flexible legal team tailored to your company's needs. LegalPlatform allows you to hire and retain multiple lawyers across different practice areas — from corporate and employment to compliance, litigation, and intellectual property — all within one secure platform. Whether you need short-term advisory support or long-term retainers, you can structure your legal resources efficiently without expanding internal overhead." />
           </div>
         </div>
 
@@ -48,9 +48,9 @@ const HireMultipleLawyers = () => {
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Mission" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="How It Works" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Your business can browse verified lawyers by expertise, compare services and pricing, and hire professionals based on specific legal requirements. You may retain multiple lawyers simultaneously for different departments or projects, communicate through secure chat, upload documents, and receive customized service proposals or invoices directly within the platform. All engagements, subscriptions, and payments are managed centrally, giving your company full visibility and control." />
             </div>
           </div>
 
@@ -59,9 +59,9 @@ const HireMultipleLawyers = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Vision" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="Why It Matters" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Instead of relying on a single external firm or building a costly in-house team, LegalPlatform enables companies to create a scalable, on-demand legal network. This approach improves responsiveness, increases specialization, and ensures your business has the right legal expertise available whenever required." />
             </div>
           </div>
 
@@ -70,20 +70,9 @@ const HireMultipleLawyers = () => {
             data-aos="fade-up"
             data-aos-delay="250"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Legal Platform History" /></h3>
-            <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
-            </div>
-          </div>
-
-          <div
-            className="info-page-block"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
             <h3 className="info-page-block-title"><AnimatedText text="Target Audience" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="This solution is designed for startups, SMEs, and large enterprises that require structured legal support across multiple business functions and jurisdictions, without the operational burden of traditional legal models." />
             </div>
           </div>
         </div>

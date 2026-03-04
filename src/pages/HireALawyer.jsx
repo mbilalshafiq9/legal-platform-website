@@ -38,7 +38,7 @@ const HireALawyer = () => {
         >
           <h1 className="home-hero-title text-center"><AnimatedText text="Hire a Lawyer" /></h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+            <AnimatedText text="Hire trusted lawyers online, compare services, and get professional legal advice — all in one secure platform." />
           </div>
         </div>
 
@@ -50,7 +50,7 @@ const HireALawyer = () => {
           >
             <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Mission" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Our mission is to simplify legal access through technology. We provide a secure and transparent platform where users can post legal issues, hire lawyers, or subscribe to ongoing legal services — while enabling lawyers to grow sustainable, scalable practices in a modern digital economy." />
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const HireALawyer = () => {
           >
             <h3 className="info-page-block-title"><AnimatedText text="Legal Platform Vision" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Our vision is to modernize the legal industry by creating a global digital marketplace where legal services are accessible, transparent, and efficient. We aim to eliminate barriers such as high upfront costs, limited accessibility, and outdated processes — empowering individuals and businesses to access trusted legal expertise anytime, anywhere." />
             </div>
           </div>
 
@@ -72,7 +72,7 @@ const HireALawyer = () => {
           >
             <h3 className="info-page-block-title"><AnimatedText text="Legal Platform History" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="LegalPlatform was founded to bridge the gap between clients and legal professionals in a rapidly evolving digital world. Recognizing the inefficiencies of traditional legal systems, we built a technology-driven solution that enables lawyers to showcase their services and allows clients to hire or retain them seamlessly online. Today, we continue to innovate and expand globally." />
             </div>
           </div>
 
@@ -83,7 +83,7 @@ const HireALawyer = () => {
           >
             <h3 className="info-page-block-title"><AnimatedText text="Target Audience" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="LegalPlatform serves individuals, startups, SMEs, and corporations seeking reliable legal support. We also empower lawyers and legal consultants who want to scale their practice, offer subscription-based services, and reach clients beyond geographical limitations." />
             </div>
           </div>
         </div>

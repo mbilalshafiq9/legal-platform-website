@@ -38,7 +38,7 @@ const ChatWithLawyers = () => {
         >
           <h1 className="home-hero-title text-center"><AnimatedText text="Chat with Lawyers" /></h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+            <AnimatedText text="Receive professional legal guidance in real time. Simple, secure, and designed for individuals and businesses worldwide." />
           </div>
         </div>
 
@@ -52,7 +52,7 @@ const ChatWithLawyers = () => {
               <AnimatedText text="Discussion with Professional Lawyer" />
             </h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Start a secure, real-time conversation with verified lawyers. Discuss your matter confidentially, ask questions, and receive clear legal guidance — all without scheduling delays or unnecessary complexity." />
             </div>
           </div>
 
@@ -62,10 +62,10 @@ const ChatWithLawyers = () => {
             data-aos-delay="200"
           >
             <h3 className="info-page-block-title">
-              <AnimatedText text="Get Advice for legal issues" />
+              <AnimatedText text="Get Advice for your Legal Issues" />
             </h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Share your legal concern and receive tailored professional advice from experienced lawyers. Within the chat, lawyers can also send customized service proposals or invoices for one-time services or ongoing work. Review the details, approve securely, and proceed with confidence — all in one place." />
             </div>
           </div>
 
@@ -75,10 +75,10 @@ const ChatWithLawyers = () => {
             data-aos-delay="250"
           >
             <h3 className="info-page-block-title">
-              <AnimatedText text="Upload Legal Document and images" />
+              <AnimatedText text="Upload Legal Documents and Images" />
             </h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Share contracts, agreements, or supporting documents directly in the chat. Lawyers can review your files and provide accurate legal feedback based on your documents." />
             </div>
           </div>
 
@@ -87,9 +87,9 @@ const ChatWithLawyers = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Subscribe Packages" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="Monthly and one time services" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Retain a lawyer through flexible monthly subscription packages for continuous legal support. Enjoy priority access, ongoing advisory services, and predictable legal costs tailored to your needs." />
             </div>
           </div>
         </div>

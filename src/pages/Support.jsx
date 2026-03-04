@@ -38,7 +38,9 @@ const Support = () => {
             >
               <h1 className="home-hero-title text-center"><AnimatedText text="Support" /></h1>
               <div className="home-hero-text text-center">
-                <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+                <AnimatedText text="Our support team is available to assist you with any questions regarding your account, payments, technical issues, or platform usage. Whether you are a user, lawyer, or corporate client, we are committed to ensuring a smooth and secure experience on LegalPlatform." />
+                <br /> <br />
+                <AnimatedText text="If you require assistance, you can contact our team directly through the platform or via our official support channels. We aim to respond promptly and resolve inquiries efficiently." />
               </div>
             </div>
           </div>
@@ -89,10 +91,11 @@ const Support = () => {
                     type="submit"
                     className="btn fw-bold"
                     style={{
-                      backgroundColor: "#FEF233",
-                      color: "black",
+                      backgroundColor: "#000000",
+                      color: "#ffffff",
                       borderRadius: "10px",
                       width: "120px",
+                      marginBottom: "32px",
                     }}
                   >
                     Submit
