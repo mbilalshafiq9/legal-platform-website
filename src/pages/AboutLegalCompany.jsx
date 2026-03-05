@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Footer from "../components/Footer";
 import AnimatedText from "../components/AnimatedText";
+import aboutImg from "../assets/images/aboutImg.png";
 
 const AboutLegalCompany = () => {
   const [showTop, setShowTop] = useState(false);
@@ -36,9 +37,20 @@ const AboutLegalCompany = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h1 className="home-hero-title text-center"><AnimatedText text="About LegalPlatform" /></h1>
-          <div className="home-hero-text text-center">
-            <AnimatedText text="LegalPlatform is a next-generation legal marketplace transforming how legal services are accessed, delivered, and scaled globally." />
+          <div className="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+            <div className="flex-grow-1">
+              <h1 className="home-hero-title text-center text-md-start">
+                <AnimatedText text="About Legal Company" />
+              </h1>
+              <div className="home-hero-text text-center text-md-start">
+                <AnimatedText text="LegalPlatform is a next-generation legal marketplace transforming how legal services are accessed, delivered, and scaled globally." />
+              </div>
+            </div>
+            <img
+              src={aboutImg}
+              alt="About LegalPlatform"
+              className="info-hero-illustration d-none d-md-block"
+            />
           </div>
         </div>
 

@@ -618,10 +618,7 @@ const HomePage = () => {
                 />
                 <span className="d-md-none"> </span>
                 <br className="d-none d-md-block" />
-                <AnimatedText
-                  text="qualified lawyers."
-                  tag="span"
-                />
+                <AnimatedText text="qualified lawyers." tag="span" />
               </div>
             </div>
 
@@ -647,17 +644,18 @@ const HomePage = () => {
                     tag="span"
                   />{" "}
                   <br />
-                  <AnimatedText
-                    text="support you need."
-                    tag="span"
-                  />
+                  <AnimatedText text="support you need." tag="span" />
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-8" data-aos="fade-up" data-aos-delay="200">
             <div className="chat-card hover-lift">
-              <img src={profileOne} alt="Profile" className="mini-chat-avatar" />
+              <img
+                src={profileOne}
+                alt="Profile"
+                className="mini-chat-avatar"
+              />
               <div className="mini-chat-card d-flex justify-content-center">
                 <img
                   src={contractor}
@@ -706,7 +704,7 @@ const HomePage = () => {
               <div className="chat-footer">
                 <div className="text-white hp-ask-ai-text">
                   <AnimatedText
-                    text="Legal research never been easier. Have a conversation with your virtual assistant, gain insights and simple answers to your complex questions in real-time."
+                    text="Experience how easy it is to connect with lawyers on LegalPlatform. Direct chat, document sharing, and seamless communication — all in one streamlined interface."
                     tag="span"
                   />
                 </div>

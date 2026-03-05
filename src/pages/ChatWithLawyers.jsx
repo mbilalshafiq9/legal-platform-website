@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Footer from "../components/Footer";
 import AnimatedText from "../components/AnimatedText";
+import chatWithLawyer from "../assets/images/chatWithLawyer.png";
 
 const ChatWithLawyers = () => {
   const [showTop, setShowTop] = useState(false);
@@ -36,9 +37,20 @@ const ChatWithLawyers = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h1 className="home-hero-title text-center"><AnimatedText text="Chat with Lawyers" /></h1>
-          <div className="home-hero-text text-center">
-            <AnimatedText text="Receive professional legal guidance in real time. Simple, secure, and designed for individuals and businesses worldwide." />
+          <div className="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+            <div className="flex-grow-1">
+              <h1 className="home-hero-title text-center text-md-start">
+                <AnimatedText text="Chat with Lawyers" />
+              </h1>
+              <div className="home-hero-text text-center text-md-start">
+                <AnimatedText text="Receive professional legal guidance in real time. Simple, secure, and designed for individuals and businesses worldwide." />
+              </div>
+            </div>
+            <img
+              src={chatWithLawyer}
+              alt="Chat with lawyers"
+              className="info-hero-illustration d-none d-md-block"
+            />
           </div>
         </div>
 

@@ -650,8 +650,8 @@ body.dark-mode .faq-tab.active {
   object-fit: contain;
 }
 .download-phones .phone-1 {
-  left: 0;
-  bottom: -330px;
+  left: 33px;
+  bottom: -310px;
   filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.4));
   z-index: 3;
   width: 339px;
@@ -927,6 +927,9 @@ body.dark-mode .faq-tab.active {
   border-radius: 20px;
   width: 720px;
   max-width: 92vw;
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.25);
   position: relative;
 }
@@ -942,6 +945,9 @@ body.dark-mode .faq-tab.active {
 }
 .postq-body {
   padding: 20px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 .postq-textarea-wrapper {
   position: relative;
@@ -959,7 +965,7 @@ body.dark-mode .faq-tab.active {
 }
 
 .postq-textarea {
-  height: 120px;
+  height: 200px;
   border-radius: 12px;
   border: none !important;
   width: 100%;
@@ -996,7 +1002,7 @@ body.dark-mode .faq-tab.active {
 }
 .postq-attach {
   width: 100%;
-  height: 50px;
+  height: 56px;
   border-radius: 12px;
   border: 2px dashed #d6d6d6;
   padding: 0 14px;
@@ -1019,8 +1025,12 @@ body.dark-mode .faq-tab.active {
   padding: 12px 14px;
   border: 1px solid #e5e5e5;
 }
+.postq-fee-wide {
+  width: 100%;
+  height: 85px;
+}
 .postq-fee-title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
 }
 .postq-fee-sub {
@@ -1028,15 +1038,29 @@ body.dark-mode .faq-tab.active {
   color: #707070;
 }
 .postq-fee-currency {
-  font-size: 12px;
+  font-size: 18px;
   color: #707070;
 }
 .postq-fee-amount {
   font-size: 22px;
   font-weight: 700;
 }
+.postq-fee-amount-wrap {
+  border-left: 1px solid #e5e5e5;
+  padding-left: 14px;
+  min-width: 92px;
+}
 .postq-submit {
   height: 56px;
+}
+.postq-bottom-row {
+  margin-top: auto;
+}
+.postq-bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 8px;
 }
 .breadcrumb-item.active {
   color: #888;
@@ -1392,6 +1416,27 @@ body.dark-mode .faq-tab.active {
   justify-content: space-between;
 }
 
+.info-hero-illustration {
+  max-width: 340px;
+  height: auto;
+}
+
+.info-hero-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+.info-hero-stack .stack-img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.info-hero-stack .stack-img.small {
+  max-width: 160px;
+}
+
 .info-page-list {
   max-width: 960px;
   margin: 0 auto;
@@ -1424,6 +1469,12 @@ body.dark-mode .faq-tab.active {
   line-height: 1.9;
   color: #4b4b4b;
   margin: 0;
+}
+
+.info-block-illustration {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
 }
 
 .home-hero-row {

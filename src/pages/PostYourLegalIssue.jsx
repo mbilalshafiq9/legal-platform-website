@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Footer from "../components/Footer";
 import AnimatedText from "../components/AnimatedText";
+// removed illustrative images per request
 
 const PostYourLegalIssue = () => {
   const [showTop, setShowTop] = useState(false);
@@ -40,7 +41,7 @@ const PostYourLegalIssue = () => {
             <AnimatedText text="Post Your Legal Issue Today" />
           </h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
+            <AnimatedText text="The Post Question feature allows users to submit their legal issue and receive responses from multiple lawyers. Users can review the responses, choose the lawyer that best fits their needs, and proceed with legal services through secure engagement." />
           </div>
         </div>
 
@@ -51,10 +52,10 @@ const PostYourLegalIssue = () => {
             data-aos-delay="150"
           >
             <h3 className="info-page-block-title">
-              <AnimatedText text="Create New account for Post Question." />
+              <AnimatedText text="Post Your Legal Issue" />
             </h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Submit your legal matter through the platform and describe your situation. You can also upload relevant documents to help lawyers better understand your case." />
             </div>
           </div>
 
@@ -63,9 +64,11 @@ const PostYourLegalIssue = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Find Professional Lawyer" /></h3>
+            <h3 className="info-page-block-title">
+              <AnimatedText text="Receive Responses from Lawyers" />
+            </h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Once your issue is posted, multiple lawyers may review your matter and provide their initial responses or opinions based on their expertise." />
             </div>
           </div>
 
@@ -74,9 +77,11 @@ const PostYourLegalIssue = () => {
             data-aos="fade-up"
             data-aos-delay="250"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Lawyer Profile Detail" /></h3>
+            <h3 className="info-page-block-title">
+              <AnimatedText text="Choose the Right Lawyer for Your Case" />
+            </h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="Review the responses and select the lawyer who best fits your situation. You can then connect directly and discuss your matter further through secure chat." />
             </div>
           </div>
 
@@ -85,9 +90,24 @@ const PostYourLegalIssue = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <h3 className="info-page-block-title"><AnimatedText text="Hire Now Best Lawyer" /></h3>
+            <h3 className="info-page-block-title">
+              <AnimatedText text="Review the Service Proposal" />
+            </h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." />
+              <AnimatedText text="The lawyer may send a customized invoice or service proposal based on the legal work required, whether it is consultation, case handling, or document review." />
+            </div>
+          </div>
+
+          <div
+            className="info-page-block"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <h3 className="info-page-block-title">
+              <AnimatedText text="Proceed with Your Legal Support" />
+            </h3>
+            <div className="info-page-block-text">
+              <AnimatedText text="Once the invoice is approved, you can proceed with the legal service. If you are satisfied with the lawyer, you may continue working together through a one-time engagement or retain them on a monthly basis for ongoing legal support." />
             </div>
           </div>
         </div>
