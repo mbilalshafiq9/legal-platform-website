@@ -662,7 +662,7 @@ const HomePage = () => {
                   >
                     <span className="mb-1">
                       <AnimatedText
-                        text="Hi! I need a quick review of this contractor agreement. Can you help?"
+                        text="Hi, I need help reviewing a service agreement. Can you take a look?"
                         tag="span"
                       />
                     </span>
@@ -672,6 +672,8 @@ const HomePage = () => {
                     src={profileOne}
                     alt="User avatar"
                     className="chat-avatar ms-2"
+                    data-aos="fade-left"
+                    data-aos-delay="360"
                   />
                 </div>
 
@@ -680,6 +682,8 @@ const HomePage = () => {
                     src={profileTwo}
                     alt="Lawyer avatar"
                     className="chat-avatar me-2"
+                    data-aos="fade-right"
+                    data-aos-delay="420"
                   />
                   <div
                     className="bubble light d-flex flex-column align-items-start justify-content-between hp-light-bubble w-auto"
@@ -687,7 +691,7 @@ const HomePage = () => {
                     data-aos-delay="420"
                   >
                     <span className="mb-1">
-                      <AnimatedText text="Absolutely. Please upload the document and confirm the jurisdiction." tag="span" />
+                      <AnimatedText text="Sure. Please upload the document and let me know what you’d like me to focus on." tag="span" />
                     </span>
                     <span className="time time-left">02:12 PM</span>
                   </div>
@@ -701,7 +705,7 @@ const HomePage = () => {
                   >
                     <span className="mb-1">
                       <AnimatedText
-                        text="Uploaded. It’s for California — please check termination and payment terms."
+                        text="Uploaded. I’m mainly concerned about the termination clause."
                         tag="span"
                       />
                     </span>
@@ -711,6 +715,8 @@ const HomePage = () => {
                     src={profileOne}
                     alt="User avatar"
                     className="chat-avatar ms-2"
+                    data-aos="fade-left"
+                    data-aos-delay="480"
                   />
                 </div>
 
@@ -719,6 +725,8 @@ const HomePage = () => {
                     src={profileTwo}
                     alt="Lawyer avatar"
                     className="chat-avatar me-2"
+                    data-aos="fade-right"
+                    data-aos-delay="540"
                   />
                   <div
                     className="bubble light d-flex flex-column align-items-start justify-content-between hp-light-bubble w-auto"
@@ -726,7 +734,7 @@ const HomePage = () => {
                     data-aos-delay="540"
                   >
                     <span className="mb-1">
-                      <AnimatedText text="Got it. I’ll review now and share notes within 2 hours. Fee: USD 50." tag="span" />
+                      <AnimatedText text="Understood. I can review the contract and provide feedback. The consultation fee is USD 60. I’ll send the invoice now." tag="span" />
                     </span>
                     <span className="time time-left">02:13 PM</span>
                   </div>
@@ -750,6 +758,8 @@ const HomePage = () => {
                     src={profileOne}
                     alt="User avatar"
                     className="chat-avatar ms-2"
+                    data-aos="fade-left"
+                    data-aos-delay="600"
                   />
                 </div>
               </div>

@@ -896,7 +896,7 @@ body.dark-mode .faq-tab.active {
 .bubble.light.hp-light-bubble {
   height: auto;
   min-height: 68px;
-  border-radius: 30px;
+  border-radius: 16px;
 }
 
 .chat-footer h6.hp-ask-ai-heading {
@@ -915,7 +915,7 @@ body.dark-mode .faq-tab.active {
   border-radius: 50px;
   padding: 6px 10px;
   height: 74px;
-  margin-top: 28px;
+  margin-top: 20px;
 }
 .input-wrap input {
   flex: 1;
@@ -1052,6 +1052,9 @@ body.dark-mode .faq-tab.active {
 }
 .postq-how-list li {
   margin-bottom: 6px;
+}
+.text-white.hp-ask-ai-text {
+  margin-top: 15px;
 }
 .postq-fee-card {
   background: #f8f8f8;
@@ -1246,6 +1249,12 @@ body.dark-mode .faq-tab.active {
 }
 
 @media (max-width: 768px) {
+  .chat-card {
+    height: auto;
+  }
+  .text-white.hp-ask-ai-text {
+    margin-top: 20px;
+  }
   .img1 {
     height: auto;
     padding-bottom: 40px;
@@ -1379,7 +1388,7 @@ body.dark-mode .faq-tab.active {
     width: 100% !important;
    }
   .who-wrap {
-    margin-top: 700px;
+    margin-top: 760px;
   }
   .hp-send-button-icon {
     width: 22px;
