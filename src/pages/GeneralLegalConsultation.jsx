@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import AnimatedText from "../components/AnimatedText";
 import Seo from "../components/Seo";
 
-const GeneralLegalConsultation = () => {
+const ContractReview = () => {
   const [showTop, setShowTop] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -30,32 +30,32 @@ const GeneralLegalConsultation = () => {
   return (
     <div className="info-page-wrapper font-inter">
       <Seo
-        title="General Legal Consultation — Legal Platform"
-        description="Book one-time advisory sessions with verified lawyers to get clarity and next steps."
-        canonicalPath="/general-legal-consultation"
+        title="Contract Review — Legal Platform"
+        description="Get expert contract review to identify risks, clarify obligations, and protect your interests."
+        canonicalPath="/contract-review"
         image="/favicon.png"
       />
       <Header />
       <Breadcrumbs />
       <main className="info-page-section py-5">
         <div className="info-page-main-card" data-aos="fade-up" data-aos-delay="100">
-          <h1 className="home-hero-title text-center"><AnimatedText text="General Legal Consultation" /></h1>
+          <h1 className="home-hero-title text-center"><AnimatedText text="Contract Review" /></h1>
           <div className="home-hero-text text-center">
-            <AnimatedText text="Discuss your matter in a structured call or chat, receive guidance, and plan actions confidently." />
+            <AnimatedText text="Upload your agreement and receive a professional review from verified lawyers. We highlight risks, propose revisions, and ensure the document reflects your commercial goals." />
           </div>
         </div>
 
         <div className="info-page-list">
           <div className="info-page-block" data-aos="fade-up" data-aos-delay="150">
-            <h3 className="info-page-block-title"><AnimatedText text="Areas Covered" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="What You Get" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Corporate, employment, real estate, family, IP, and more — matched by jurisdiction." />
+              <AnimatedText text="Detailed comments on clauses, liability, payment terms, IP, termination, and dispute resolution, with clear recommendations." />
             </div>
           </div>
           <div className="info-page-block" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="info-page-block-title"><AnimatedText text="Booking" /></h3>
+            <h3 className="info-page-block-title"><AnimatedText text="How It Works" /></h3>
             <div className="info-page-block-text">
-              <AnimatedText text="Choose a lawyer, agree on scope and fee, and meet securely through the platform." />
+              <AnimatedText text="Post your document, choose a lawyer, receive a proposal, and proceed with secure payment. Feedback and revised drafts are delivered inside the platform." />
             </div>
           </div>
         </div>
@@ -77,4 +77,4 @@ const GeneralLegalConsultation = () => {
   );
 };
 
-export default GeneralLegalConsultation;
+export default ContractReview;

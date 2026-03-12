@@ -17,12 +17,16 @@ import ForLawyers from "../pages/ForLawyers";
 import BusinessPortal from "../pages/BusinessPortal";
 import HireMultipleLawyers from "../pages/HireMultipleLawyers";
 import LawFirm from "../pages/LawFirm";
-import Corporate from "../pages/Corporate";
-import ContractReview from "../pages/ContractReview";
-import ContractDrafting from "../pages/ContractDrafting";
-import GeneralLegalConsultation from "../pages/GeneralLegalConsultation";
-import WillPreparation from "../pages/WillPreparation";
+import BusinessAndCorporateLaw from "../pages/BusinessAndCorporateLaw";
+import LegalConsultation from "../pages/LegalConsultation";
 import Services from "../pages/Services";
+import ContractServices from "../pages/ContractServices";
+import PropertyAndRealEstateLaw from "../pages/PropertyAndRealEstateLaw";
+import FamilyAndPersonalMatters from "../pages/FamilyAndPersonalMatters";
+import ImmigrationAndVisaLaw from "../pages/ImmigrationAndVisaLaw";
+import DisputeResolution from "../pages/DisputeResolution";
+import IntellectualProperty from "../pages/IntellectualProperty";
+import StartupAndBusinessSetup from "../pages/StartupAndBusinessSetup";
 
 const AppRouter = () => {
     const basePath = process.env.REACT_APP_BASE_PATH;
@@ -47,11 +51,15 @@ const AppRouter = () => {
           <Route path="/business-portal" element={<BusinessPortal />} />
           <Route path="/hire-multiple-lawyers" element={<HireMultipleLawyers />} />
           <Route path="/law-firm" element={<LawFirm />} />
-          <Route path="/corporate" element={<Corporate />} />
-          <Route path="/contract-review" element={<ContractReview />} />
-          <Route path="/contract-drafting" element={<ContractDrafting />} />
-          <Route path="/general-legal-consultation" element={<GeneralLegalConsultation />} />
-          <Route path="/will-preparation" element={<WillPreparation />} />
+          <Route path="/business-corporate-law" element={<BusinessAndCorporateLaw />} />
+          <Route path="/legal-consultation" element={<LegalConsultation />} />
+          <Route path="/contract-services" element={<ContractServices />} />
+          <Route path="/property-real-estate-law" element={<PropertyAndRealEstateLaw />} />
+          <Route path="/family-personal-matters" element={<FamilyAndPersonalMatters />} />
+          <Route path="/immigration-visa-law" element={<ImmigrationAndVisaLaw />} />
+          <Route path="/dispute-resolution" element={<DisputeResolution />} />
+          <Route path="/intellectual-property" element={<IntellectualProperty />} />
+          <Route path="/startup-business-setup" element={<StartupAndBusinessSetup />} />
           <Route path="/services" element={<Services />} />
         </Routes>
       </Router>

@@ -12,6 +12,7 @@ const PostYourLegalIssue = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [summary, setSummary] = useState("");
   const [jurisdiction, setJurisdiction] = useState("");
+  const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -111,24 +112,50 @@ const PostYourLegalIssue = () => {
 
     setPayLoading(true);
     try {
-      const formData = new FormData();
-      formData.append("amount", paymentPrice);
+      // 1. First add the question
+      const questionData = new FormData();
+      questionData.append("question", summary);
+      questionData.append("jurisdiction_id", jurisdiction);
+      if (file) {
+        questionData.append("attachments[]", file);
+      }
+      questionData.append("doc_formats", "docs");
+      questionData.append("max_documents", "2");
 
-      const url = `${process.env.REACT_APP_API_URL}/stripePayment`;
-      const res = await axios.post(url, formData, {
+      const addQuestionUrl = `${process.env.REACT_APP_API_URL}/addQuestion`;
+      const addRes = await axios.post(addQuestionUrl, questionData, {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      if (!addRes?.data?.status) {
+        toast.error(addRes?.data?.message || "Failed to post question.");
+        setPayLoading(false);
+        return;
+      }
+
+      // 2. Then proceed to payment intent creation
+      const paymentData = new FormData();
+      paymentData.append("amount", paymentPrice);
+
+      const stripeUrl = `${process.env.REACT_APP_API_URL}/stripePayment`;
+      const stripeRes = await axios.post(stripeUrl, paymentData, {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
       });
 
-      if (res?.data?.status) {
-        toast.success(res?.data?.message || "Payment intent created successfully!");
-        // Further payment processing logic can go here (e.g., Stripe SDK)
+      if (stripeRes?.data?.status) {
+        toast.success(addRes?.data?.message || "Question posted successfully!");
+        toast.success(stripeRes?.data?.message || "Payment intent created successfully!");
+        // Reset form or redirect
       } else {
-        toast.error(res?.data?.message || "Failed to create payment intent.");
+        toast.error(stripeRes?.data?.message || "Failed to create payment intent.");
       }
     } catch (e) {
-      toast.error("An error occurred during payment processing.");
+      toast.error("An error occurred during processing.");
     } finally {
       setPayLoading(false);
     }
@@ -154,7 +181,10 @@ const PostYourLegalIssue = () => {
 
   const handleFileChange = (e) => {
     const f = e.target.files && e.target.files[0];
-    if (f) setFileName(f.name);
+    if (f) {
+      setFile(f);
+      setFileName(f.name);
+    }
   };
 
   return (
@@ -201,12 +231,12 @@ const PostYourLegalIssue = () => {
                     onChange={(e) => setJurisdiction(e.target.value)}
                   >
                     <option value="">Jurisdiction</option>
-                    <option value="usa">United States</option>
-                    <option value="uk">United Kingdom</option>
-                    <option value="uae">United Arab Emirates</option>
-                    <option value="india">India</option>
-                    <option value="canada">Canada</option>
-                    <option value="other">Other</option>
+                    <option value="34">United Arab Emirates</option>
+                    <option value="1">United States</option>
+                    <option value="2">United Kingdom</option>
+                    <option value="3">India</option>
+                    <option value="4">Canada</option>
+                    <option value="5">Other</option>
                   </select>
                 </div>
               </div>

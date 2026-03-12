@@ -44,36 +44,51 @@ const Footer = () => {
           </div>
 
           <div className="col-md-3 col-6">
-            <h6 className="footer-heading"><AnimatedText text="Service" /></h6>
+            <h6 className="footer-heading"><AnimatedText text="Legal Consultation" /></h6>
             <ul className="list-unstyled footer-list mt-3">
               <li>
-                <Link to="/contract-review" className="footer-link hover-text-theme">
-                  <AnimatedText text="Contract Review" />
+                <Link to="/contract-services" className="footer-link hover-text-theme">
+                  <AnimatedText text="Contract Services" />
                 </Link>
               </li>
               <li>
-                <Link to="/contract-drafting" className="footer-link hover-text-theme">
-                  <AnimatedText text="Contract Drafting" />
+                <Link to="/business-corporate-law" className="footer-link hover-text-theme">
+                  <AnimatedText text="Business & Corporate Law" />
                 </Link>
               </li>
               <li>
-                <Link to="/general-legal-consultation" className="footer-link hover-text-theme">
-                  <AnimatedText text="General Legal Consultation" />
+                <Link to="/property-real-estate-law" className="footer-link hover-text-theme">
+                  <AnimatedText text="Property & Real Estate Law" />
                 </Link>
               </li>
               <li>
-                <Link to="/will-preparation" className="footer-link hover-text-theme">
-                  <AnimatedText text="Will Preparation" />
+                <Link to="/family-personal-matters" className="footer-link hover-text-theme">
+                  <AnimatedText text="Family & Personal Matters" />
                 </Link>
               </li>
               <li>
-                <Link to="/post-your-legal-issue" className="footer-link hover-text-theme">
-                  <AnimatedText text="Post Legal Issue" />
+                <Link to="/immigration-visa-law" className="footer-link hover-text-theme">
+                  <AnimatedText text="Immigration and Visa Law" />
+                </Link>
+              </li>
+              <li>
+                <Link to="/dispute-resolution" className="footer-link hover-text-theme">
+                  <AnimatedText text="Dispute Resolution" />
+                </Link>
+              </li>
+              <li>
+                <Link to="/intellectual-property" className="footer-link hover-text-theme">
+                  <AnimatedText text="Intellectual Property" />
+                </Link>
+              </li>
+              <li>
+                <Link to="/startup-business-setup" className="footer-link hover-text-theme">
+                  <AnimatedText text="Startup and Business Setup" />
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="footer-link hover-text-theme">
-                  <AnimatedText text="See More Services" />
+                  <AnimatedText text="Explore 100+ Legal Services" />
                 </Link>
               </li>
             </ul>
