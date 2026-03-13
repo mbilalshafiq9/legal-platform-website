@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Footer from "../components/Footer";
@@ -24,6 +24,9 @@ const Corporate = () => {
   const [tradeLicense, setTradeLicense] = useState(null);
   const [companyLogo, setCompanyLogo] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+  const fileInputRef = useRef(null);
+  const logoInputRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -70,30 +73,35 @@ const Corporate = () => {
               <div className="corp-form-wrap" data-aos="fade-right" data-aos-delay="150">
                 <div className="corp-form-card">
                   <label className="corp-label">Company Name <span className="corp-asterisk">*</span></label>
-                  <input type="text" className="form-control corp-input mb-3" placeholder="Company Name" value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
+                  <input type="text" className={`form-control corp-input mb-3 ${errors.companyName ? 'is-invalid' : ''}`} placeholder="Company Name" value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
+                  {errors.companyName && <div className="invalid-feedback">{errors.companyName}</div>}
 
                   <div className="row g-2">
                     <div className="col-6">
                       <label className="corp-label">First Name <span className="corp-asterisk">*</span></label>
-                      <input type="text" className="form-control corp-input" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                      <input type="text" className={`form-control corp-input ${errors.firstName ? 'is-invalid' : ''}`} placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                      {errors.firstName && <div className="invalid-feedback">{errors.firstName}</div>}
                     </div>
                     <div className="col-6">
                       <label className="corp-label">Last Name <span className="corp-asterisk">*</span></label>
-                      <input type="text" className="form-control corp-input" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                      <input type="text" className={`form-control corp-input ${errors.lastName ? 'is-invalid' : ''}`} placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                      {errors.lastName && <div className="invalid-feedback">{errors.lastName}</div>}
                     </div>
                   </div>
 
                   <div className="row g-2 mt-3">
                     <div className="col-6">
                       <label className="corp-label">Company Email <span className="corp-asterisk">*</span></label>
-                      <input type="email" className="form-control corp-input" placeholder="Company Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                      <input type="email" className={`form-control corp-input ${errors.email ? 'is-invalid' : ''}`} placeholder="Company Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                      {errors.email && <div className="invalid-feedback">{errors.email}</div>}
                     </div>
                     <div className="col-6">
                       <label className="corp-label">Phone Number <span className="corp-asterisk">*</span></label>
                       <div className="input-group corp-phone">
                         <span className="input-group-text corp-cc"><span className="corp-flag" aria-hidden="true"></span> +971 ▾</span>
-                        <input type="tel" className="form-control corp-input corp-phone-input" placeholder="50 123 4567" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                        <input type="tel" className={`form-control corp-input corp-phone-input ${errors.phone ? 'is-invalid' : ''}`} placeholder="50 123 4567" value={phone} onChange={(e) => setPhone(e.target.value)} />
                       </div>
+                      {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
                     </div>
                   </div>
 
@@ -104,13 +112,14 @@ const Corporate = () => {
                     </div>
                     <div className="col-6">
                       <label className="corp-label">Company Trade License <span className="corp-asterisk">*</span></label>
-                      <input type="file" className="form-control corp-input" onChange={(e) => setTradeLicense(e.target.files?.[0] || null)} />
+                      <input type="file" className={`form-control corp-input ${errors.tradeLicense ? 'is-invalid' : ''}`} onChange={(e) => setTradeLicense(e.target.files?.[0] || null)} ref={fileInputRef} />
+                      {errors.tradeLicense && <div className="invalid-feedback">{errors.tradeLicense}</div>}
                     </div>
                   </div>
 
                   <div className="mt-3">
                     <label className="corp-label">Company Logo</label>
-                    <input type="file" className="form-control corp-input" onChange={(e) => setCompanyLogo(e.target.files?.[0] || null)} />
+                    <input type="file" className="form-control corp-input" onChange={(e) => setCompanyLogo(e.target.files?.[0] || null)} ref={logoInputRef} />
                   </div>
 
                   <div className="mt-3">
@@ -119,20 +128,29 @@ const Corporate = () => {
                       className="btn w-100 corp-btn"
                       disabled={loading}
                       onClick={async () => {
-                        if (!companyName.trim() || !firstName.trim() || !lastName.trim() || !email.trim() || !phone.trim() || !tradeLicense) {
-                          toast.error("Please fill all required fields.");
+                        const newErrors = {};
+                        if (!companyName.trim()) newErrors.companyName = "Company name is required.";
+                        if (!firstName.trim()) newErrors.firstName = "First name is required.";
+                        if (!lastName.trim()) newErrors.lastName = "Last name is required.";
+                        if (!email.trim()) {
+                          newErrors.email = "Email is required.";
+                        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                          newErrors.email = "Please enter a valid email.";
+                        }
+                        if (!phone.trim()) {
+                          newErrors.phone = "Phone number is required.";
+                        } else if (phone.replace(/\D/g, "").length < 7) {
+                          newErrors.phone = "Please enter a valid phone number.";
+                        }
+                        if (!tradeLicense) newErrors.tradeLicense = "Trade license is required.";
+
+                        if (Object.keys(newErrors).length > 0) {
+                          setErrors(newErrors);
+                          toast.error("Please fill all required fields correctly.");
                           return;
                         }
-                        const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-                        if (!emailOk) {
-                          toast.error("Please enter a valid email.");
-                          return;
-                        }
-                        const digits = phone.replace(/\D/g, "");
-                        if (digits.length < 7) {
-                          toast.error("Please enter a valid phone number.");
-                          return;
-                        }
+
+                        setErrors({});
                         setLoading(true);
                         try {
                           const form = new FormData();
@@ -141,7 +159,7 @@ const Corporate = () => {
                           form.append("last_name", lastName);
                           form.append("email", email);
                           form.append("country_code", "AE");
-                          form.append("phone_number", digits);
+                          form.append("phone_number", phone.replace(/\D/g, ""));
                           if (website) form.append("website", website);
                           form.append("trade_license", tradeLicense);
                           if (companyLogo) form.append("company_logo", companyLogo);
@@ -159,6 +177,8 @@ const Corporate = () => {
                             setWebsite("");
                             setTradeLicense(null);
                             setCompanyLogo(null);
+                            if (fileInputRef.current) fileInputRef.current.value = "";
+                            if (logoInputRef.current) logoInputRef.current.value = "";
                           } else {
                             toast.error(res?.data?.message || "Submission failed.");
                           }
