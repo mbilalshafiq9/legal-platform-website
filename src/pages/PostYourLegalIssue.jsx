@@ -6,6 +6,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import Footer from "../components/Footer";
 import Seo from "../components/Seo";
 import postQuestionBgImg from "../assets/images/postQuestionBgImg.png";
+import { Dropdown } from 'primereact/dropdown';
 
 const PostYourLegalIssue = () => {
   const [showTop, setShowTop] = useState(false);
@@ -22,6 +23,22 @@ const PostYourLegalIssue = () => {
   const [otpVerified, setOtpVerified] = useState(false);
   const [authToken, setAuthToken] = useState(null);
   const [payLoading, setPayLoading] = useState(false);
+  const [jurisdictionsList, setJurisdictionsList] = useState([]);
+
+  useEffect(() => {
+    const fetchDropdownData = async () => {
+      try {
+        const url = `${process.env.REACT_APP_API_URL}/getDropdownData`;
+        const res = await axios.get(url);
+        if (res?.data?.status) {
+          setJurisdictionsList(res.data.data.jurisdictions || []);
+        }
+      } catch (e) {
+        console.error("Error fetching dropdown data:", e);
+      }
+    };
+    fetchDropdownData();
+  }, []);
 
   useEffect(() => {
     const fetchAppVersion = async () => {
@@ -225,19 +242,17 @@ const PostYourLegalIssue = () => {
               </div>
               <div className="mb-3">
                 <div className="postq-select-wrap">
-                  <select
-                    className="form-select postq-select"
+                  <Dropdown
                     value={jurisdiction}
-                    onChange={(e) => setJurisdiction(e.target.value)}
-                  >
-                    <option value="">Jurisdiction</option>
-                    <option value="34">United Arab Emirates</option>
-                    <option value="1">United States</option>
-                    <option value="2">United Kingdom</option>
-                    <option value="3">India</option>
-                    <option value="4">Canada</option>
-                    <option value="5">Other</option>
-                  </select>
+                    onChange={(e) => setJurisdiction(e.value)}
+                    options={jurisdictionsList}
+                    optionLabel="name"
+                    optionValue="id"
+                    placeholder="Jurisdiction"
+                    className="w-100 postq-select"
+                    style={{ border: 'none', height: '52px' }}
+                    filter
+                  />
                 </div>
               </div>
               <div className="mb-3">
